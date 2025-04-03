@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'body.dart';
+import 'package:kidney_savers_app/splash_screen.dart';
+import 'acc_one.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,15 +17,15 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Kidney Savers'),
+      home: SplashScreen(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  const MyHomePage({super.key});
 
-  final String title;
+
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -36,34 +37,11 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
 
-    return Scaffold(
-      // appBar: AppBar(
-      //
-      //   backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-      //
-      //   title: Text(widget.title),
-      // ),
-      body: Center(
-
-        child: Column(
-
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Container(
-              width: MediaQuery.of(context).size.width / 1.5,
-              child: Image.asset('images/logo_ks_1.png'),
-            ),
-            OutlinedButton(
-                onPressed: goTo,
-                child: Text('Go to MainPage')),
-          ],
-        ),
-      ),
-    );
+    return AccueilOne();
   }
   void goTo(){
     Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
-      return MainBody();
+      return AccueilOne();
     } ));
   }
 }
