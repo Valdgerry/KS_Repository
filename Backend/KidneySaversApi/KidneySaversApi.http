@@ -1,0 +1,6 @@
+@KidneySaversApi_HostAddress = http://localhost:5137
+
+GET {{KidneySaversApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

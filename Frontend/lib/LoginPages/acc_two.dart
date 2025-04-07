@@ -117,13 +117,15 @@ class _AccueilTwoState extends State<AccueilTwo> {
                                   ),
                                  ),
                                  TextButton(
-                                     onPressed: null,
-                                     child: Text('S\'inscrire',
-                                      style: TextStyle(
+                                     onPressed: (){
+                                       context.go('/create_account');
+                                     },
+                                     child:
+                                     Text('S\'inscrire', style: TextStyle(
                                         color: Colors.orangeAccent,
                                         fontStyle: FontStyle.italic,
+                                       ),
                                       ),
-                                     ),
                                  ),
                                ],
                              )
