@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kidney_savers_app/main.dart';
+import 'package:go_router/go_router.dart';
 import 'acc_one.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -15,8 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void  initState(){
     super.initState();
     Future.delayed(Duration(seconds: 3),(){
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> MyHomePage()),
-      );
+      context.go('/accueil_one');
     });
   }
 
