@@ -83,11 +83,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\KS_Repository\\KidneySaversApi\\KidneySaversApi.csproj",
+      "projectUniqueName": "E:\\KS_Repository\\Backend\\KidneySaversApi\\KidneySaversApi.csproj",
       "projectName": "KidneySaversApi",
-      "projectPath": "E:\\KS_Repository\\KidneySaversApi\\KidneySaversApi.csproj",
+      "projectPath": "E:\\KS_Repository\\Backend\\KidneySaversApi\\KidneySaversApi.csproj",
       "packagesPath": "C:\\Users\\HP PROBOOK 450 G1\\.nuget\\packages\\",
-      "outputPath": "E:\\KS_Repository\\KidneySaversApi\\obj\\",
+      "outputPath": "E:\\KS_Repository\\Backend\\KidneySaversApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Users\\HP PROBOOK 450 G1\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
