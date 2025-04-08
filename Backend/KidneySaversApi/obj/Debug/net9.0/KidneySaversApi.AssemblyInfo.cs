@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KidneySaversApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+370f963ba1abbf5b63b2f780c872ead7ca533203")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23bd24d906789e8f653de9a9776f1b6c411302c5")]
 [assembly: System.Reflection.AssemblyProductAttribute("KidneySaversApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KidneySaversApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
