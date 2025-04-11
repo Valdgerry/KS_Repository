@@ -1,16 +1,34 @@
-# kidney_savers_app
+# KidneySaversApi
 
-A new Flutter project.
+API pour l'application Kidney Savers, déployée sur Render avec PostgreSQL.
 
-## Getting Started
+## Prérequis
+- .NET 8.0 SDK
+- PostgreSQL
+- Compte Render
 
-This project is a starting point for a Flutter application.
+## Installation locale
+1. Clonez le dépôt : git clone https://github.com/Brandondgb/KidneySaversApi.git
+2. Configurez la connexion PostgreSQL dans appsettings.json.
+3. Exécutez les migrations : dotnet ef database update
+4. Lancez l’API : dotnet run
 
-A few resources to get you started if this is your first Flutter project:
+## Déploiement sur Render
+1. Créez un service Web sur Render.
+2. Connectez ce dépôt GitHub.
+3. Ajoutez les variables d’environnement :
+   - ConnectionStrings__DefaultConnection: "Host=;Database=;Username=;Password="
+   - Jwt__Key: Une clé secrète longue
+   - Jwt__Issuer: "KidneySavers"
+   - Jwt__Audience: "KidneySavers"
+4. Déployez !
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference..
+## Endpoints
+- POST /api/auth/register
+- POST /api/auth/login
+- GET /api/quiz
+- GET /api/quiz/{id}
+- POST /api/quiz/submit
+- POST /api/tracking
+- GET /api/tracking/{userId}
+- POST /api/chatbot
